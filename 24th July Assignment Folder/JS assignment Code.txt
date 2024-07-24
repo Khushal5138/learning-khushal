@@ -1,0 +1,146 @@
+//JS arrays initialization:
+let scores=new Array();
+//let scores=new Array(10);
+//let scores=new Array(5,3,7,4,2);
+
+//let athletes=new Array(3);
+//let scores=new Array(1,2,3);
+let signs=new Array('Red');
+let artists=Array();
+let ArrayName=['e1','e2','e3'];
+let colors=['red','blue','green'];
+let empty=[];
+console.log(colors[0]);
+console.log(colors[2]);
+colors[2]='orange';
+console.log(colors);
+console.log(colors.length);
+colors.push('yellow'); //adds at end of the array
+colors.unshift('white');//adds to the beginning of the array
+let last_element=colors.pop();//removes an element from the end of the array
+console.log(last_element);
+let first_element=colors.shift();
+console.log(first_element);
+let index=colors.indexOf('blue');
+console.log(index);
+console.log(Array.isArray(colors));
+
+
+// For each looping:
+
+let numbers=[1,2,3,4,5];
+numbers.forEach(function(i)//mandatory parameter
+{
+    i=i+5;
+});
+console.log(numbers);
+numbers.forEach(function(i,j,numbers)//numbers parameter is optional
+{
+    console.log(`${j} is the index of the number ${i}`)
+});
+console.log(numbers);
+
+//Array of Objects:
+
+let cars = [
+    {
+    "color": "purple",
+    "type": "minivan",
+    "registration": new Date('2017-01-03'),
+    "capacity": 7
+    },
+    {
+    "color": "red",
+    "type": "station wagon",
+    "registration": new Date('2018-03-03'),
+    "capacity": 5
+    }];
+
+    let car = {
+        "color": "red",
+        "type": "cabrio",
+        "registration": new Date('2016-05-02'),
+        "capacity": 2
+       }
+cars.unshift(car);
+cars.push(car);
+cars.splice(2,0,car); // index no. to insert at, no. of items to remove, no. of items to add
+let car_color=cars.find(car => car.color == "purple" && car.type == "minivan");
+let redCars=cars.filter(car => car.color ==="red");
+let carMap=cars.map(car => {if(car.capacity <=3)
+{
+    return "small";
+}
+if(car.capacity<=5)
+{
+    return "medium";
+}
+else{
+    return "large";
+}})
+let carsProperties=cars.map(car=> {
+let properties={
+    "capacity":car.capacity,
+    "size":"large"
+};
+if(car.capacity<=3)
+{
+    properties["size"]="small";
+}
+if(car.capacity<=5)
+{
+    properties["size"]="medium";
+}
+return properties;
+});
+cars.forEach(car => {
+    car['size'] = "large";
+    if (car.capacity <= 5){
+     car['size'] = "medium";
+    }
+    if (car.capacity <= 3){
+     car['size'] = "small";
+    }
+    });
+
+let sortedCars = cars.sort((c1, c2) => (c1.capacity < c2.capacity) ? 1 :(c1.capacity > c2.capacity) ? -1 : 0);
+console.log(sortedCars);
+console.log(carMap);
+console.log(car_color);
+console.log(cars);
+
+//Data Types in JS:
+
+
+let num=50;
+console.log(num);
+let String="Hi";
+console.log(String);
+let isTrue=true;
+console.log(isTrue);
+let udf;
+console.log(udf);
+let nullValue=null;
+console.log(nullValue);
+let bigint=2030282382083232830230283230283283023203802832803230;
+console.log(bigint);
+const sym=Symbol("foo");
+console.log(sym);
+let price1 = 10;
+let price2 = 20.5;
+let totalPrice = price1 + price2;
+console.log("Total Price:", totalPrice);
+let email = "example@example.com";
+let isValidEmail = email.includes("@");
+console.log("Is Valid Email:", isValidEmail); 
+let task = {
+    id: 1,
+    title: "Complete Project",
+    priority: "High",
+    deadline: "2024-07-17"
+    };
+    console.log("Task:", task);
+
+
+
+
