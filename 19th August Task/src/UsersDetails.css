@@ -1,0 +1,57 @@
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #f4f7f9;
+}
+
+.user-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.user-name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-email, .user-username, .user-role, .user-status {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.loading-message, .error-message {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
