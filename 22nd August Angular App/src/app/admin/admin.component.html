@@ -1,0 +1,19 @@
+<!-- <div *ngIf="categories.length > 0">
+    <ul>
+      <li *ngFor="let category of categories">{{ category.name }}</li>
+    </ul>
+  </div>
+  <div *ngIf="categories.length === 0">
+    <p>No categories available.</p>
+  </div>
+   -->
+
+   <div *ngIf="categories.length > 0" class="category-container">
+    <div *ngFor="let category of categories" class="category-box">
+      <p>{{ category.name }}</p>
+    </div>
+  </div>
+  <div *ngIf="categories.length === 0" class="no-categories">
+    <p>No categories available.</p>
+  </div>
+  

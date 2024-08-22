@@ -1,0 +1,16 @@
+<!-- <nav>
+  <ul>
+    <li *ngFor="let link of links">
+      <a [routerLink]="link.path">{{ link.label }}</a>
+    </li>
+  </ul>
+</nav> -->
+
+
+<nav>
+  <ul>
+    <li *ngFor="let item of menuItems">
+      <a [routerLink]="item.path">{{ item.title }}</a>
+    </li>
+  </ul>
+</nav>

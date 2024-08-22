@@ -1,0 +1,94 @@
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards horizontally */
+    margin: 20px;
+  }
+  
+  .product-card {
+    background-color: #e0f2f1; /* Cool and welcoming background color */
+    border: 1px solid #b2dfdb; /* Border color for the card */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    text-align: center; /* Center align text */
+    flex: 1 1 calc(50% - 20px); /* Two boxes per line, adjusted for gap */
+    max-width: calc(50% - 20px); /* Ensure boxes fit within the line */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Lift the card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  }
+  
+  .product-card h3 {
+    font-family: 'Poppins', sans-serif; /* Elegant, modern font */
+    font-weight: 600; /* Semi-bold font weight */
+    font-size: 1.6em; /* Slightly larger font size for product name */
+    color: #004d40; /* Darker shade for contrast */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow to enhance text visibility */
+    letter-spacing: 0.5px; /* Slight spacing between letters for a more refined look */
+  }
+  
+  .product-card p {
+    font-family: 'Roboto', sans-serif; /* Clean, readable font */
+    font-size: 16px;
+    margin: 10px 0;
+    color: #004d40; /* Darker color for text */
+    line-height: 1.6; /* Improved readability with increased line height */
+  }
+  
+  .product-card p strong {
+    font-weight: 600; /* Semi-bold labels */
+    color: #00796b; /* Accent color for labels */
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 1 1 calc(100% - 20px); /* Full width for smaller screens */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      font-size: 14px; /* Slightly smaller font size on very small screens */
+    }
+  }
+
+  .product-card button {
+    background-color: #00796b; /* Matching background color */
+    color: #ffffff; /* White text color */
+    border: 2px solid #004d40; /* Border to match the theme */
+    border-radius: 20px; /* More rounded corners for a softer look */
+    padding: 10px 25px; /* Slightly larger padding for a comfortable click area */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500; /* Medium font weight */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .product-card button:hover {
+    background-color: #004d40; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth on hover */
+  }
+  
+  .product-card button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px #004d40; /* Glow effect for focus */
+  }
+  
+  .product-card button:active {
+    transform: scale(1.05); /* Slightly smaller on click */
+    background-color: #00574b; /* Darker shade when active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Maintain shadow on click */
+  }
+  
+  

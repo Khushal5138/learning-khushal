@@ -1,0 +1,17 @@
+<h1>ANGULAR 17 REACTIVE CONTACT FORM EXAMPLE</h1>
+
+<form [formGroup] = "contactForm" (ngSubmit) = "onSubmit()">
+
+
+    <h3>Square of the number : {{result}}</h3>
+
+    <input type = "text" name = "fullName" placeholder="Enter Full Name" formControlName = "fullName"/>
+    <br/>
+    <br/>
+    <input type = "email" name = "email" placeholder = "Enter Email" formControlName = "email"/>
+    <br/>
+    <br/>
+    <textarea name = "message" placeholder = "Enter Message" formControlName = "message" ></textarea>
+    <br/>
+    <input type = "submit" value = "Send" />
+</form>
