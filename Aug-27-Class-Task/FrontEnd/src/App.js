@@ -23,6 +23,7 @@ import ProductList from './ProductList';
 import SearchProduct from './SearchProduct';
 import EditProduct from './ProductEdit';
 import DeleteProduct from './DeleteProduct';
+import Navbar from './ProductsNavbar';
 // import Task from './Task';
 // import TaskList from './TaskList';
 
@@ -53,6 +54,8 @@ function App() {
       <Link to="/Numbers"> Numbers </Link>
       <Link to="/Calculator"> Calculator </Link>
       <Link to="/ObjList"> Student List </Link> */}
+
+      <Navbar/>
 
         <Routes>
           

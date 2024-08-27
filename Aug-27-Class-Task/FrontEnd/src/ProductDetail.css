@@ -74,7 +74,7 @@
 } */
 
 
-.product-details-container {
+/* .product-details-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -111,4 +111,39 @@
 
 .edit-btn:hover {
     background-color: #0056b3;
+} */
+
+
+/* CSS for the ProductDetail component */
+.product-detail-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price, .product-availability {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
 }

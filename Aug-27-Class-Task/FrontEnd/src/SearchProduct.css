@@ -33,7 +33,14 @@
 } */
 
 
-.search-product-container {
+
+
+
+
+
+
+
+/* .search-product-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -64,4 +71,71 @@
 
 .search-results .product-item {
     margin-bottom: 20px;
+} */
+
+
+
+/* CSS for the SearchProduct component */
+.search-product-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-product-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.search-input, .search-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 130px);
+    margin-right: 10px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.search-result-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-price, .product-availability {
+    font-size: 16px;
+    color: #555;
 }

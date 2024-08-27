@@ -1,71 +1,81 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';
-import './DeleteProduct.css'; // Import your CSS file
+import {useState , useEffect} from "react";
+import axios from "axios";
+import ShowProducts from "./ShowProducts";
+import Addproducts from "./Addproducts";
+function DeleteProducts()
+{
+    //let todosInitialValue=[{name: "Default Name",status: "Default Status"}];
+    let [ids,setIds]=useState({});
+    let [idEntered, setIdEntered]=useState("Enter ID To Delete ");
+    //let [statusEntered,setStatusEntered]=useState("Default Status");
+    useEffect(function()
+    {
+        console.log("function called on load");
+        displayProducts();
+    },[]);
 
-const DeleteProduct = () => {
-    const { id } = useParams();
-    const [product, setProduct] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const fetchProduct = async () => {
-            try {
-                const response = await axios.get(`/api/products/${id}`);
-                if (response.status === 200) {
-                    setProduct(response.data);
-                } else {
-                    console.error('Error fetching product:', response.status);
-                }
-            } catch (error) {
-                console.error('Error fetching product:', error);
-                alert('Error fetching product!');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchProduct();
-    }, [id]);
-
-    const handleDelete = async () => {
-        try {
-            const response = await axios.delete(`/api/products/${id}`);
-            if (response.status === 200) {
-                alert('Product deleted successfully!');
-                navigate('/products');
-            } else {
-                console.error('Error deleting product:', response.status);
-                alert('Error deleting product!');
-            }
-        } catch (error) {
-            console.error('Error deleting product:', error);
-            alert('Error deleting product!');
-        }
-    };
-
-    if (loading) {
-        return <div>Loading...</div>;
+    function changeIdEntered(e)
+    {
+        setIdEntered(e.target.value);
     }
 
-    return (
-        <div className="delete-product-container">
-            <h2>Delete Product</h2>
-            {product ? (
-                <div className="product-info">
-                    <p><strong>Name:</strong> {product.name}</p>
-                    <p><strong>Price:</strong> ${product.price}</p>
-                    <p><strong>Availability:</strong> {product.availability}</p>
-                    <button className="delete-btn" onClick={handleDelete}>
-                        Delete Product
-                    </button>
-                </div>
-            ) : (
-                <p>Product not found.</p>
-            )}
+    function deleteId(index)
+    {
+        axios
+            .delete(`/api/v1/products/${index}`)
+            .then(function(response)
+            {
+                console.log(response);
+                displayProducts();
+            })
+            .catch(function(error)
+            {
+                console.log(error);
+            });
+        let newIds=ids.filter(function (i)
+        {
+            if(index == i)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        });
+    setIds(newIds);
+    }
+    function reset()
+    {
+        let ids=[];
+        setIds(newIds);
+    }
+    return(
+        <div className="Hobbies">
+            <h1> Hobbies </h1>
+            <input type="text" name="todoitem" value={idEntered} onChange={changeIdEntered}/>
+            <button className="Hobby" onClick={reset}>Reset All</button>
+            {
+                Ids.map(function(val,index)
+                {
+                    return(
+                        <div>
+                            {val.name}
+                            <button className="hobbyBtn" onClick={function ()
+                                {
+                                    deleteId(index);
+                                }
+                            }>Delete</button>
+                            <div>
+                                Status:{val.status}
+                            </div>
+                        </div>
+
+                    );
+                })
+            }
         </div>
     );
-};
 
-export default DeleteProduct;
+}
+export default DeleteProducts;
