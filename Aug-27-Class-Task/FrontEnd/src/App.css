@@ -1,0 +1,212 @@
+.body {
+  text-align: center;
+  background: #355E3B;
+
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Menu,.Login
+{
+  border:2px solid black;
+  padding:10px;
+  margin:0px 0px 10px 0px;
+}
+.Menu a
+{
+  border: 2px solid green;
+  padding:4px;
+  margin:5px;
+  text-decoration: none;
+}
+.Login
+{
+  border-color: black;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Login input
+{
+  padding: 3px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Container
+{
+  border: 2px solid black;
+}
+.Footer
+{
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+.counterDiv
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.counterDiv button
+{
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.counterDiv h1
+{
+
+  margin: auto;
+  margin-block: 10px;
+  padding: 5px;
+
+}
+.hobbyBtn
+{
+  margin-left: 5px;
+}
+.Hobby
+{
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.Hobbies
+{
+  border: 2px solid black;
+  margin-block: 10px;
+}
+.Num
+{
+  border: 2px solid black;
+}
+.num
+{
+  margin-left: 5px;
+}
+.Calculator
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.dltdata
+{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.btns
+{
+  margin-right: 5px;
+}
+.Student
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.clearbtn
+{
+  margin-left: 5px;
+} */
+/* a{
+  text-decoration: none;
+  margin-right: 15px;
+  border: 2px solid black;
+  margin: 50px 20px;
+  padding: 10px;
+} */
+
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+ */
+
+
+ .app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
