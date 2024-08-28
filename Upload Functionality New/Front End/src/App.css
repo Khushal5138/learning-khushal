@@ -1,0 +1,473 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Menu,.Login
+{
+  border:2px solid black;
+  padding:10px;
+  margin:0px 0px 10px 0px;
+}
+.Menu a
+{
+  border: 2px solid green;
+  padding:4px;
+  margin:5px;
+  text-decoration: none;
+}
+.Login
+{
+  border-color: black;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Login input
+{
+  padding: 3px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Container
+{
+  border: 2px solid black;
+}
+.Footer
+{
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+.counterDiv
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.counterDiv button
+{
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.counterDiv h1
+{
+
+  margin: auto;
+  margin-block: 10px;
+  padding: 5px;
+
+}
+.hobbyBtn
+{
+  margin-left: 5px;
+}
+.Hobby
+{
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.Hobbies
+{
+  border: 2px solid black;
+  margin-block: 10px;
+}
+.Num
+{
+  border: 2px solid black;
+}
+.num
+{
+  margin-left: 5px;
+}
+.Calculator
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.dltdata
+{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.btns
+{
+  margin-right: 5px;
+}
+.Student
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.clearbtn
+{
+  margin-left: 5px;
+} */
+/* a{
+  text-decoration: none;
+  margin-right: 15px;
+  border: 2px solid black;
+  margin: 50px 20px;
+  padding: 10px;
+} */
+
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+ */
+
+/* .app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+} */
+
+:root {
+  --primary-color: #007bff; /* A cool blue shade */
+  --secondary-color: #ffc107; /* A warm yellow */
+  --background-color: #f8f9fa; /* Light gray for the background */
+  --text-color: #343a40; /* Dark gray for text */
+  --button-hover-color: #0056b3; /* Darker shade of primary color */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Soft shadow color */
+  --border-radius: 12px; /* Slightly larger border radius */
+  --transition-speed: 0.3s; /* Transition speed for hover effects */
+  --border-color: #dee2e6; /* Light gray for borders */
+  --highlight-color: #e9ecef; /* Slightly darker gray for highlights */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* Add some padding around the body */
+}
+
+/* App Container */
+#root,
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(
+    --highlight-color
+  ); /* Slightly different background for contrast */
+  border: 2px solid var(--border-color); /* Beautiful border around the entire app */
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px var(--shadow-color); /* More pronounced shadow for depth */
+  width: 90%; /* Increase width of the main container */
+  max-width: 1400px; /* Set a maximum width for large screens */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center align headers */
+  font-size: 2rem; /* Increase font size */
+}
+
+/* Form Container */
+form {
+  background: #fff;
+  padding: 40px; /* Increase padding for larger content area */
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  width: 100%;
+  max-width: 700px; /* Increase width for more space */
+  border: 1px solid var(--border-color); /* Elegant border for the form */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Input Fields */
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 16px; /* Increase padding for larger input area */
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: border-color var(--transition-speed);
+  font-size: 1.2rem; /* Increase font size */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="file"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 16px 24px; /* Increase padding for larger button */
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed);
+  width: 100%;
+  box-shadow: 0 4px 12px var(--shadow-color); /* Add shadow to buttons */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Messages */
+p {
+  margin-top: 20px;
+  padding: 20px; /* Increase padding */
+  background-color: var(--secondary-color);
+  color: #212529;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  font-size: 1.2rem; /* Increase font size */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Component Containers */
+.component-container {
+  background-color: #fff;
+  padding: 30px; /* Increase padding for larger content area */
+  margin: 20px 0;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color); /* Shadow for individual components */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Preview Container */
+.preview-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.preview-container img,
+.preview-container embed {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color); /* Shadow for preview */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 1rem; /* Slightly smaller font size on smaller screens */
+  }
+
+  #root,
+  .App {
+    padding: 20px;
+    box-shadow: none; /* Remove box shadow on small screens for simplicity */
+  }
+}
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  padding: 15px;
+  z-index: 1000;
+}
+
+.notification-success {
+  border-left: 5px solid #28a745;
+  background-color: #e9f5e9;
+  color: #155724;
+}
+
+.notification-error {
+  border-left: 5px solid #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.notification-hide {
+  display: none;
+}
+
+.notification-show {
+  display: block;
+}
+
+.notification p {
+  margin: 0;
+}
+/* Preview Container */
+.preview-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Image Preview */
+.preview-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+/* Video Preview */
+.preview-video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+/* PDF Preview */
+.preview-pdf {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.preview-image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
