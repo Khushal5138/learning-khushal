@@ -25,11 +25,11 @@ const user = {
   ],
 };
 
-describe("getTotalLikes" , () => {
+describe("getMinLikes" , () => {
 
-  test("should return the total likes of a user" , () => {
+  test("should return the min likes of a user" , () => {
 
-    expect(getTotalLikes(user)).toBe(130);
+    expect(getMinLikes(user)).toBe(100);
   });
 });
 
@@ -45,7 +45,7 @@ describe("getMostPopularBlog" , () => {
 
     };
 
-    expect(getMostPopularBlog(user)).toBe(230);
+    expect(getMostPopularBlog(user)).toEqual(output);
 
 
   });
@@ -53,8 +53,8 @@ describe("getMostPopularBlog" , () => {
 
 describe("getTotalLikes" , () => {
 
-  test("should return the min likes of a user" , () => {
+  test("should return the total likes of a user" , () => {
 
-    expect(getMinLikes(user)).toBe(100);
+    expect(getTotalLikes(user)).toBe(230);
   });
 });

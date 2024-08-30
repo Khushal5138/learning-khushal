@@ -1,21 +1,21 @@
-const { isPrime } = require("../isPrime");
+const { isPrimeNumber } = require("../isPrime");
 
 const number = 23;
 
 const num2 = 12;
 
-describe("isPrime" , (number) => {
+describe("isPrime" , () => {
 
   test("should return if the number is prime or not" , () => {
 
-    expect(isPrime(number)).toBe(true);
+    expect(isPrimeNumber(number)).toBe(true);
   });
 });
 
-describe("isPrime" , (num2) => {
+describe("isPrime" , () => {
 
   test("should return if the number is prime or not" , () => {
 
-    expect(isPrime(num2)).toBe(false);
+    expect(isPrimeNumber(num2)).toBe(false);
   });
 });

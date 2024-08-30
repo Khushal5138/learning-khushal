@@ -3,7 +3,7 @@ function getTotalLikes(user) {
   const totalLikes = user.blogs.reduce((total , blog) => {
 
     return (total += blog.likes);
-  });
+  }, 0);
 
   return totalLikes;
 }
@@ -41,4 +41,5 @@ const getMinLikes = (user) => {
   minLikes = 100;
   return minLikes;
 };
+
 module.exports = { getTotalLikes , getMostPopularBlog , getMinLikes };
