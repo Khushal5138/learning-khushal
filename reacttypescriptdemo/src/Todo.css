@@ -1,0 +1,147 @@
+/* Todo.css */
+
+/* Container for the todo application */
+.content-container,
+#root,
+html {
+  background-color: #e9f7ef;
+}
+.Todos {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the todo application */
+.Todos h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Input fields and select dropdown */
+.Todos input,
+.Todos select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.Todos select {
+  margin-bottom: 2rem;
+}
+
+/* Button styles */
+.Todos button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1abc9c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 1rem;
+}
+
+.Todos button:hover,
+.Todos button:focus {
+  background-color: #16a085;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Container for action buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Card styles for each todo item */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card-header {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-content {
+  margin-bottom: 1rem;
+}
+
+.card-status {
+  font-weight: bold;
+}
+
+.card-status.completed {
+  color: #2ecc71; /* Green color for completed tasks */
+}
+
+.card-status.incomplete {
+  color: #e74c3c; /* Red color for incomplete tasks */
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-delete-button {
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-delete-button:hover,
+.card-delete-button:focus {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .Todos {
+    padding: 1rem;
+  }
+
+  .Todos input,
+  .Todos select {
+    width: 100%;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+  }
+
+  .card-buttons button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.action-buttons {
+  margin-left: 42%;
+  margin-top: -3%;
+}

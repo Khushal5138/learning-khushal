@@ -1,0 +1,38 @@
+/* Styling for the Navbar */
+.navbar {
+  background-color: #2ecc71; /* Beautiful green background for the navbar */
+  padding: 1rem 2rem; /* Increased padding for a thicker navbar */
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the list in the navbar */
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 1.5rem; /* Evenly space items with a gap */
+}
+
+/* Styling for each list item */
+.navbar li {
+  margin: 0; /* Remove margin to ensure spacing is handled by flex properties */
+}
+
+/* Styling for the links */
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text color */
+  font-size: 1.5rem; /* Larger font size for better visibility */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color and background color transition */
+  padding: 0.5rem 1rem; /* Add padding for better click area */
+  border-radius: 4px; /* Rounded corners for the background */
+}
+
+.navbar a:hover {
+  color: #ffffff; /* Keep text color white on hover */
+  background-color: #27ae60; /* Darker green background on hover for contrast */
+}

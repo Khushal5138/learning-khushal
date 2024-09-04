@@ -1,0 +1,68 @@
+.counter-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.counter-title {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-left: 2%;
+  color: #333;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.counter-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.counter-button:hover {
+  background-color: #0056b3;
+}
+.counter-button:hover {
+  background-color: #023d7c;
+}
+.counter-button:first-of-type {
+  background-color: #28a745; /* Green for Increase */
+}
+
+.counter-button:first-of-type:hover {
+  background-color: #218838;
+}
+
+.counter-button:last-of-type {
+  background-color: #007bff; /* Red for Decrease */
+}
+
+.counter-button:last-of-type:hover {
+  background-color: #044e9e; /* Red for Decrease */
+}
+
+.counter-button:nth-of-type(2) {
+  background-color: rgb(207, 5, 5); /* Blue for Reset */
+}
+
+.counter-button:nth-of-type(2):hover {
+  background-color: rgb(157, 4, 4); /* Darker blue for hover effect on Reset */
+}
+
+.counter-value {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #443e9e;
+}

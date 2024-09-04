@@ -1,0 +1,30 @@
+.userProfileDiv {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.userProfileDiv h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.userProfileDiv p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.userProfileDiv .userId {
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.userProfileDiv .errorMessage {
+  font-weight: bold;
+  color: #dc3545;
+}
