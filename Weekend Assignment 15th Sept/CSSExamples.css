@@ -1,0 +1,46 @@
+/* Relative Units Example */
+.wrapper {
+  width: 90%;
+  max-width: 940px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.wrapper .inner {
+  width: 50%;
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+/* CSS Selectors Example */
+h1 em {
+  color: blue;
+}
+
+h1 + h2 {
+  opacity: 0.8;
+}
+
+body > .selectors > p.example {
+  color: blue;
+}
+
+/* nth-of-type example */
+ul.list li:nth-of-type(2n) {
+  background-color: lightslategrey;
+}
+
+/* Selecting specific elements */
+ul.list li:nth-child(5) {
+  color: green;
+}
+
+ul.list li:nth-child(-n + 5) {
+  font-weight: bold;
+}
+
+ul.list li:nth-last-child(2) {
+  color: red;
+}

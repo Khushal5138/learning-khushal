@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.pink,
+.orange,
+.blue,
+.purple,
+.green {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.pink {
+  background-color: pink;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  filter: hue-rotate(20deg); /* Creates a stacking context */
+}
+
+.orange {
+  background-color: orange;
+  top: 80px;
+  left: 80px;
+  z-index: 3; /* Higher z-index */
+}
+
+.blue {
+  background-color: blue;
+  top: 120px;
+  left: 120px;
+  z-index: 2; /* Lower z-index */
+}
+
+.purple {
+  background-color: purple;
+  top: 160px;
+  left: 160px;
+  z-index: 0; /* Purple box behind pink due to z-index */
+}
+
+.green {
+  background-color: green;
+  top: 200px;
+  left: 200px;
+  z-index: 100; /* No effect because it's non-positioned */
+}
