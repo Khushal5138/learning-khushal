@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Gender Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            background-image: url("background.jpg");
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Name Gender Prediction</h1>
+    <label for="nameInput">Enter a name:</label>
+    <input type="text" id="nameInput" placeholder="Enter a name...">
+    <button onclick="predictGender()">Predict</button>
+
+    <div id="result">
+        <h2>Result</h2>
+        <h3>Gender: <span id="resultGender"></span></h3>
+        <h3>Probability:<span id="resultProbability"></span></h3>
+    </div>
+
+    <script>
+        function predictGender() {
+            const name = document.getElementById('nameInput').value.trim();
+            if (name === '') {
+                alert('Please enter a name.');
+                return;
+            }
+
+            const apiUrl = `https://api.genderize.io/?name=${name}`;
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    displayResult(name, data);
+                })
+                .catch(error => {
+                    console.error('Error fetching gender prediction:', error);
+                    alert('Error fetching gender prediction. Please try again.');
+                });
+        }
+
+        function displayResult(name, data) {
+            const resultDiv = document.getElementById('result');
+            const resultNameSpan = document.getElementById('resultName');
+            const resultGenderSpan = document.getElementById('resultGender');
+            const resultProbabilitySpan = document.getElementById('resultProbability');
+
+            resultNameSpan.textContent = name;
+            resultGenderSpan.textContent = data.gender;
+            resultProbabilitySpan.textContent = `${(data.probability * 100).toFixed(2)}%`;
+
+            resultDiv.style.display = 'block'; 
+        }
+    </script>
+</body>
+</html>

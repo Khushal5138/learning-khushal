@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="courses-container">
+      <div *ngFor="let course of courses" class="course-box">
+        <h2 class="course-title">{{ course.name }}</h2>
+        <img [src]="course.image" alt="{{ course.name }}" class="course-image">
+        <p class="course-price"><strong>Price:</strong> {{ course.price | currency }}</p>
+        <p class="course-credit-cost"><strong>Credit Cost:</strong> {{ course.credit_cost }}</p>
+        <p class="course-category"><strong>Category:</strong> {{ course.category_name }}</p>
+        <p class="course-instructor"><strong>Instructor ID:</strong> {{ course.instructor }}</p>
+        <p class="course-active"><strong>Active:</strong> {{ course.active ? 'Yes' : 'No' }}</p>
+        <p class="course-finished"><strong>Finished:</strong> {{ course.finished ? 'Yes' : 'No' }}</p>
+        <p class="course-created-at"><strong>Created At:</strong> {{ course.created_at | date:'dd MMMM yyyy' }}</p>
+        <p class="course-updated-at"><strong>Updated At:</strong> {{ course.updated_at | date:'dd MMMM yyyy' }}</p>
+        <div class="course-description" [innerHTML]="course.description"></div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,35 @@
+.App{
+    text-align: center;
+    background-size: cover; 
+    background-color: beige;
+    background-attachment: fixed;
+  }
+  .inner{
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    padding: 20px;
+  }
+  .inside{
+    border:2px solid green;
+    border-radius: 5px;
+    /* padding: 20px; */
+  
+  }
+  #red{
+    background-color: red;
+    color: white;
+    height: fit-content;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  #link{
+    background-color: goldenrod;
+    border: 1px solid black;
+    width: 250px;
+    height: 20px;
+  }
+  

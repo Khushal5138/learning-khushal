@@ -1,0 +1,292 @@
+.App,.fake{
+  text-align: center;
+  /* background-image: url("8264299.png"); */
+  background-size: cover; 
+  background-color: beige;
+  background-attachment: fixed;
+}
+
+
+/* .Routes{
+  margin: 5px 0px;
+}
+.product-details{
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-image: url("codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  img{
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+  }
+}
+
+.outer{
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#MyPic img{
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#MyInfo h2{
+  color:whitesmoke;
+}
+
+.Menu{
+  padding: 20px 0px;
+  background-color: whitesmoke;
+  opacity: 0.65;
+  border-bottom: 2px solid black;
+
+}
+.Menu a{
+  border: 2px solid green;
+  padding:10px;
+  margin:5px;
+  text-decoration:none;
+  background-color:wheat;
+  border-radius: 10px;
+}
+.Login{
+  border-color: grey;
+  width:25%;
+  margin: auto;
+  padding: 10px;
+}
+.Login input{
+  padding: 10px;
+  margin:10px;
+  border-radius:10px;
+  width:80%;
+  border:2px solid cyan;
+  display: block;
+}
+.Footer{
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+  opacity: 0.85;
+}
+.Container,.Counter{
+  border: 4px solid pink;
+  margin: 10px;
+  padding: 10px;
+}
+.Counter{
+  border-color: lightblue;
+}
+.Hobbies,.Add,.Trigo,.Student{
+  background-color: aliceblue;
+  border: 2px solid blue;
+  margin: 80px 25%;
+  width: 50%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 15px;
+  opacity: 0.75;
+  box-shadow: 7px 7px rgba(0,0,0,0.5);
+}
+h1,#rev{
+  background-color: aliceblue;
+  color: green;
+}
+.Add{
+  height:15rem;
+}
+#red{
+  background-color: lightcoral;
+}
+#green{
+  background-color: lightgreen;
+}
+button,input,textarea{
+  background-color: white;
+  border: 2px solid black;
+  margin:5px;
+  padding:5px;
+  border-radius: 5px;
+}
+input{
+  width:385px;
+}
+
+.Hobbies:hover,.Add:hover,.Trigo:hover,.Student:hover,#MyPic img:hover{
+  scale:1.06;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.4);
+}
+.result-item{
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+#small{
+  width:50%;
+  margin:auto;
+}
+.lst{
+  border: 2px solid black;
+  width: 300px;
+  color: black;
+  margin: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  opacity:0.9;
+  img{
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blue;
+  }
+  img:hover{
+    scale:1.05;
+  }
+}
+.outercontainer,.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.product-card{
+  background-image: url("codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border: 2px dashed black;
+  border-radius: 15px;
+  margin:10px;
+  padding: 10px;
+  width: 400px;
+}
+.product-list div img{
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 4px 3px 3px 3px rgba(9, 132, 17, 0.538);
+}
+.product-list div img:hover{
+  scale: 1.05;
+  box-shadow: 4px 3px 3px 3px rgba(14, 156, 238, 0.763);
+} */
+/* .Menu{
+  position:fixed;
+  width: 100%;
+  opacity: 1;
+  margin-top: 0%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color:lightsteelblue ;
+}
+
+
+button{
+  font-size: medium;
+
+}
+.Routes a,button{
+  margin:10px;
+  padding:10px;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: antiquewhite;
+  border-radius: 12px;
+}
+.Routes a:hover,button:hover{
+  background-color: black;
+  border-color: red;
+  color: white;
+  scale:1.19;
+  font-size: medium;
+  box-shadow: 1px 2px rgba(255, 0, 0,0.6);
+}
+
+.addproducts{
+  width:fit-content;
+  margin:auto;
+  padding: 20px;
+  border: 4px solid blueviolet;
+}
+#submit{
+  margin-left: 150px;
+}
+h1{
+  text-align: center;
+  background-color: bisque;
+  border: 1px solid black;
+} */
+
+.inner{
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  padding: 20px;
+}
+.inside{
+  border:2px solid green;
+  border-radius: 5px;
+  /* padding: 20px; */
+
+}
+#red{
+  background-color: red;
+  color: white;
+  height: fit-content;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+}
+#link{
+  background-color: goldenrod;
+  border: 1px solid black;
+  width: 250px;
+  height: 20px;
+}

@@ -1,0 +1,18 @@
+<div class="hello">
+    <h3>{{msg}}</h3>
+    Angular has Lost!
+    <button (click) = "sayHello()">Say Hello</button>
+    <button (click) = "toggle()">Show Students</button>
+</div>
+
+<div *ngIf = "showMsg">
+    <ul>
+        @for (student of students; track $index) {
+            <li>{{$index+1}} : {{student}}</li>
+        }
+    </ul>
+    <br/>
+    <ul>
+        <li *ngFor = "let student1 of students; index as i">Index = {{ i }} : {{student1}}</li>
+    </ul>
+</div>
